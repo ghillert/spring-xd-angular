@@ -31,6 +31,10 @@ xdApp.config([ '$stateProvider', '$urlRouterProvider', '$locationProvider',
 		}).state('home.jobs.deployments', {
 			url : '/deployments',
 			templateUrl : 'assets/partials/jobs/deployments.html'
+		}).state('home.launch', {
+			url : 'launch',
+			templateUrl : 'assets/partials/launch.html',
+			controller: 'LaunchJobController'
 		}).state('home.jobs.executions', {
 			url : '/executions',
 			templateUrl : 'assets/partials/jobs/executions.html',
